@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoa</title>
+    <link rel="stylesheet" href="formulario.css">
+
+    <script>
+        function msg(){
+            alert("vc clicou no button")
+        }
+    </script>
+</head>
+<body>
+        <div>
+            <h1 id="titulo">Formulário</h1>
+            <p id="subtitulo">Complete suas informações</p>
+        </div>
+
+    <form>
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+        
+            <div class="campo">
+                <label>Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua senha" required>
+            </div>
+           
+
+            <div class="campo">
+                <label>Número:</label>
+                <input type="number" name="numero" placeholder="Digite seu número" required>
+            </div>
+            
+        </fieldset>
+            <div class="campo">
+                Email:  <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            </div>
+
+
+    
+        <fieldset class="grupo">
+            <div class="campo">
+            <label>Qual seu automovel?</label>
+            <label>
+                <input type="checkbox" name="Veiculo1" value="bicicleta">Eu tenho um bicicleta
+            </label>
+
+            <label>
+                <input type="checkbox" name="Veiculo2" value="carro">Eu tenho um carro 
+            </label>
+
+            <label>
+                <input type="checkbox" name="Veiculo3" value="moto">Eu tenho uma moto
+            </label>
+        </div>
+
+        </fieldset>
+   
+        <div class="campo">
+            <label>Qual sua formação?</label>
+            <select id="formação">
+                <option selected disabled value=""> Selecione </option>
+                <option value="Ensino Médio">Ensino Médio Incompleto</option>
+                <option value="Ensino Médio ">Ensino Médio Completo</option>
+                <option value="Ensino Superior">Ensino Superior Incompleto</option>
+                <option value="Ensino Superior">Ensino Superior Completo</option>
+            </select>
+        </div>
+     
+            <div class="campo">
+               Data de nascimento: <input type="date" name="nascimento">
+            </div>
+        
+                
+                <div class="campo">
+                    <input type="file" name="arquivos">
+                    <input type="hidden" value="meuvalor" id="imputOculto">
+                </div>
+
+                <div class="campo"> 
+                    Quantidade (entre 1 e 5): <input type="number" name="quantidade" min="1" max="5">
+                </div>
+
+                <div class="campo">
+                   <br>
+                   <label>Conte sobre você</label>
+                    <textarea row="6" style="width: 26em;" name="sobreVoce" id="sobreVoce"></textarea>
+                </div>
+               
+       
+
+            <div class="botao">
+                <button type="button" onclick="img()">Concluido</button>
+            </div>
+                        
+                
+    </form>
+</body>
+</html>
